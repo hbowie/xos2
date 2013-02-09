@@ -619,6 +619,7 @@ public class BrowserLauncher {
       url = URLEncoder.encode (inurl, scheme);
       url = XOS.replaceString (url, "%2F", "/");
       url = XOS.replaceString (url, "%3A", ":");
+      url = XOS.replaceString (url, "%3D", "=");
       url = XOS.replaceString (url, "%3F", "?");
       url = XOS.replaceString (url, "%2520", "%20");
       url = XOS.replaceString (url, " ", "%20");
