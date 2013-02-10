@@ -1,3 +1,19 @@
+/*
+ * Copyright 2004 - 2013 Herb Bowie
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.powersurgepub.xos2;
 
   import java.awt.*;
@@ -17,9 +33,6 @@ package com.powersurgepub.xos2;
   so in certain situations (as when the program wants to allow the user to 
   choose a directory or a file) this class will not
   be able to respect the user's preference for a native file chooser. <p>
-     
-  This code was developed by Herb Bowie. Copyright was voluntarily relinquished
-  in 2004, placing the source and executables into the public domain. <p>
  
   Following is typical code that would be used to access XFileChooser. <p>
  
