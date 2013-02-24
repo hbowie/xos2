@@ -993,16 +993,6 @@ public class XOS
   }
   
   /**
-    Open the passed URL in a Web Browser window.
-   
-    @param url String representing a URL to be opened.
-   */
-  public void openURL (String url) 
-      throws IOException {
-    BrowserLauncher.openURL (url);
-  }
-  
-  /**
      Replaces a from String, when found in an input String, with a to
      String. All occurrences of the from String will be replaced. The from
      String and the to String may be different lengths. 
