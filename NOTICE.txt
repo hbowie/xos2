@@ -1,3 +1,0 @@
-xos2 - Java code to assist in cross-platform adaptation. 
-
-Copyright 2004 - 2013 Herb Bowie
