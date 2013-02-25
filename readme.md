@@ -13,7 +13,7 @@ Source code is available at
 Rights
 ------  
 
-xos2 -- Copyright 2004 - 2013 Herb Bowie
+xos2 - Copyright 2004 - 2013 Herb Bowie
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
