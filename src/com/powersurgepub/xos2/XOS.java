@@ -347,12 +347,14 @@ public class XOS
     } // end if running on a Mac
     
     // Set Look and Feel if user has expressed a preference
-    String LookAndFeelClassName = getLookAndFeelClassName();
-    if (! LookAndFeelClassName.equals ("null")) {
+    String lookAndFeelClassName = getLookAndFeelClassName();
+    if ((! lookAndFeelClassName.equals ("null"))
+        // Nimbus l&f sometimes causes null pointer exception 
+        && (! lookAndFeelClassName.contains("Nimbus"))) {
       try {
-        javax.swing.UIManager.setLookAndFeel (LookAndFeelClassName);
+        javax.swing.UIManager.setLookAndFeel (lookAndFeelClassName);
       } catch (Exception e) {
-        System.out.println ("Exception caught trying to set look and feel");
+        // System.out.println ("Exception caught trying to set look and feel");
       } // end catch exception
     } // end if user has specified a preferred look and feel
     
