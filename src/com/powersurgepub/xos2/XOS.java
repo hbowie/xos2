@@ -88,6 +88,8 @@ public class XOS
    */
   public  final static String   MRJ_VERSION             = "mrj.version";
   
+  public  final static String   OS_NAME                 = "os.name";
+  
   /** 
    Key used to set system properties to display program name under Mac OS. 
    */
@@ -228,6 +230,7 @@ public class XOS
   private Preferences         systemPreferences         = null;
   
   private String              mrjVersion                = "";
+  private String              osName                    = "";
   private boolean             runningOnMacOS            = false;
   private String              sysLineSep                = null;
   private String              sysLineSepPlatform        = "";
@@ -271,10 +274,19 @@ public class XOS
    */
   protected XOS () {
     
+    osName = System.getProperty(OS_NAME);
+    if (osName != null
+        && osName.equalsIgnoreCase("Mac OS X")) {
+      runningOnMacOS = true;
+      macApp = Application.getApplication();
+    /* }
     mrjVersion = System.getProperty (MRJ_VERSION);
     if (mrjVersion != null) {
       runningOnMacOS = true;
       macApp = Application.getApplication();
+      System.out.println("Running on Mac OS"); */
+    } else {
+      // System.out.println("Not running on Mac OS");
     }
     
     // Set system default line separator characters
