@@ -510,6 +510,7 @@ public class XOS
           handleAbout();
         }
       });
+      helpMenu.addSeparator();
       helpMenu.add(helpAboutMenuItem);
     }
   } // end method
