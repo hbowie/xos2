@@ -832,14 +832,6 @@ public class XOS
       return LINE_SEP_STRING_UNIX;
     }
   }
-
-  public String getPathSeparator () {
-    if (isRunningOnMacOS()) {
-      return SLASH;
-    } else {
-      return File.pathSeparator;
-    }
-  }
   
   /**
     Set the user preferred line separator platform.
